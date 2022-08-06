@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyAppPolicy.MainPage" BackgroundColor ="#EFF1F5">
+
+    <ContentPage.Content>
+        <Grid>
+            <Grid RowDefinitions="20*,80*" >
+
+                <Grid Grid.Row="0"  >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="70*"></ColumnDefinition>
+                        <ColumnDefinition Width="30*"></ColumnDefinition>
+
+                    </Grid.ColumnDefinitions >
+                    <StackLayout  HorizontalOptions="Center" VerticalOptions="Center">
+                        <Label Grid.Column="0" Text="Company" Margin="0,0,10,0" FontSize="35"  HorizontalOptions="Start" VerticalOptions="Center" TextColor="Black">
+
+                        </Label>
+                        <Label Grid.Column="0" Text="We are a company" FontSize="15"  HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black">
+
+                        </Label>
+                    </StackLayout>
+
+                    <Frame Grid.Column="1" Margin="0,30,40,30" CornerRadius="20" BackgroundColor ="#EFF1F5" Padding="20">
+                        <Image  Source="Language.png" Scale="4.5" BackgroundColor ="#EFF1F5"></Image>
+
+                    </Frame>
+                </Grid>
+                <Grid Grid.Row="1" Padding="10">
+
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="85*"></RowDefinition>
+                            <RowDefinition Height="15*"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0"  RowDefinitions="80*,20*">
+                            <Grid Grid.Row="0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="50*"></ColumnDefinition>
+                                    <ColumnDefinition Width="50*"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <Grid Grid.Column="0"  RowDefinitions="50*,50*">
+
+                                    <Grid Grid.Row="0"  Padding="20,1,20,9">
+                                        <Frame CornerRadius="30"  BackgroundColor ="#EFF1F5">
+                                            <Frame.GestureRecognizers>
+                                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"></TapGestureRecognizer>
+                                            </Frame.GestureRecognizers>
+                                            <StackLayout Padding="0">
+                                                <Image Source="MyPolicies.png" VerticalOptions="Start" Scale="0.5"></Image>
+                                                <Label Text="My Policies" FontAttributes="Bold" TextColor="Black"></Label>
+                                                <Label Text="Policies that meets your needs" FontSize="10"  TextColor="Black"></Label>
+
+                                            </StackLayout>
+
+                                        </Frame>
+
+                                    </Grid>
+
+                                    <Grid Grid.Row="1"   Padding="20,1,20,9">
+                                        <Frame CornerRadius="30"  BackgroundColor ="#EFF1F5">
+                                            <StackLayout>
+                                                <Image  Source="Quote" VerticalOptions="Start" Scale="0.5"></Image>
+                                                <Label Text="Get a Quotes" FontAttributes="Bold" TextColor="Black"></Label>
+                                                <Label Text="Reach to our executives" FontSize="10" TextColor="Black" ></Label>
+                                            </StackLayout>
+                                        </Frame>
+
+                                    </Grid>
+
+                                </Grid>
+
+                                <Grid Grid.Column="1"  RowDefinitions="50*,50*">
+
+                                    <Grid Grid.Row="0"  Padding="20,1,20,9">
+                                        <Frame CornerRadius="30"  BackgroundColor ="#EFF1F5">
+                                            <StackLayout>
+                                                <Image  Source="YourClaims.png" HorizontalOptions="Start" Scale="0.5 "></Image>
+                                                <Label Text="Your Claims" FontAttributes="Bold" TextColor="Black"></Label>
+                                                <Label Text="Your claims and details" FontSize="10" TextColor="Black" ></Label>
+                                            </StackLayout>
+                                        </Frame>
+
+                                    </Grid>
+
+                                    <Grid Grid.Row="1"   Padding="20,1,20,9">
+                                        <Frame CornerRadius="30" BackgroundColor ="#EFF1F5">
+                                            <StackLayout>
+                                                <Image  Source="MobilePay.png" Scale="0.5" HorizontalOptions="Start"></Image>
+                                                <Label Text="Mobile Pay" FontAttributes="Bold" TextColor="Black"></Label>
+                                                <Label Text="Stay Health Live Long!" FontSize="10" TextColor="Black" ></Label>
+                                            </StackLayout>
+                                        </Frame>
+
+                                    </Grid>
+                                </Grid>
+
+
+
+                            </Grid>
+                            <Grid Grid.Row="1"  Padding="15" >
+                                <Frame CornerRadius="10" BackgroundColor ="#EFF1F5">
+                                    <StackLayout Orientation="Horizontal" >
+                                        <Image  Source="GetAssistance.png" HorizontalOptions="Start" Scale="2"></Image>
+                                        <Label Margin="40,0,0,0" Text="Get Assistance From Experts" FontAttributes="Bold" HorizontalOptions="End" VerticalOptions="Center" FontSize="12" TextColor="Black" ></Label>
+                                    </StackLayout>
+                                </Frame>
+
+                            </Grid>
+
+                        </Grid>
+                        <Grid Grid.Row="1"  Padding="12">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="20*"></ColumnDefinition>
+                                <ColumnDefinition Width="20*"></ColumnDefinition>
+                                <ColumnDefinition Width="60*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Grid Grid.Column="0">
+                                <Frame CornerRadius="15" Padding="0" BackgroundColor ="#EFF1F5">
+                                    <StackLayout Spacing="0">
+                                        <Image  Source="Support.png" Scale="0.5">
+
+                                        </Image>
+                                        <Label Text="Support" FontSize="10" HorizontalOptions="Center" VerticalOptions="End" FontAttributes="Bold" TextColor="Black">
+
+                                        </Label>
+                                    </StackLayout>
+
+                                </Frame>
+                            </Grid>
+                            <Grid Grid.Column="1">
+                                <Frame CornerRadius="15" Padding="0" BackgroundColor ="#EFF1F5">
+                                    <StackLayout Spacing="0">
+                                        <Image  Source="Document.png" Scale="0.5">
+
+                                        </Image>
+                                        <Label Text="Documents" FontSize="10" HorizontalOptions="Center" VerticalOptions="Start" FontAttributes="Bold" TextColor="Black">
+
+                                        </Label>
+                                    </StackLayout>
+                                </Frame>
+                            </Grid>
+                            <Grid Grid.Column="2">
+                                <Frame CornerRadius="15" Padding="0" BackgroundColor ="#EFF1F5">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Image  Source="Products.png" Scale="0.5" Margin="10,0,0,0">
+
+                                        </Image>
+                                        <Label Text="Products" Margin="10,0,0,0" FontSize="16" HorizontalOptions="Center"  TextColor="Black" VerticalOptions="Center" FontAttributes="Bold">
+
+                                        </Label>
+                                    </StackLayout>
+                                </Frame>
+                            </Grid>
+
+                        </Grid>
+                    </Grid>
+
+                </Grid>
+            </Grid>
+
+        </Grid>
+    </ContentPage.Content>
+
+</ContentPage>

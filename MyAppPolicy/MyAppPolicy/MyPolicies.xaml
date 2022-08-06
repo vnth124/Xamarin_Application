@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             x:Class="MyAppPolicy.MyPolicies" BackgroundColor="#EFF1F5">
+    <Grid Margin="20,0,20,0" BackgroundColor="#EFF1F5" RowSpacing="0" Padding="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="8*" />
+            <RowDefinition Height="92*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100*" />
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="0" Grid.Column="0" Text="My Policies" VerticalTextAlignment="Center" BackgroundColor="#EFF1F5" FontFamily="Roboto Light" 
+               FontSize="30" TextColor="#555555" Margin="10,0,0,0" />
+        <ScrollView Grid.Row="1" Grid.Column="0" BackgroundColor="#EFF1F5" Padding="0" Margin="0,10,0,0">
+            <StackLayout>
+                <!--ActivePolicy-->
+                <!--<xct:Expander x:Name="ExpanderActivePolicy" CollapseAnimationLength="200" IsExpanded="False">
+                    <xct:Expander.Header>-->
+                <xct:Expander x:Name="ExpanderActivePolicy" CollapseAnimationLength="200" IsExpanded="False">
+                    <xct:Expander.Header>
+                        <Grid ColumnSpacing="0" BackgroundColor="#EFF1F5" VerticalOptions="Fill" HorizontalOptions="Fill">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="100*" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100*" />
+                            </Grid.ColumnDefinitions>
+
+                            <Grid Margin="20,0,20,2"  ColumnSpacing="0" x:Name="ActivePolicy" VerticalOptions="Fill" HorizontalOptions="Fill">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="100*" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+
+                                    <ColumnDefinition Width="100*" />
+
+                                </Grid.ColumnDefinitions>
+                                <Frame CornerRadius="30" BackgroundColor="#EFF1F5" Margin="0,0,0,0"  />
+                                <Image Grid.Row="0" Grid.Column="0" Source="activepolicy.png" VerticalOptions="Center" HorizontalOptions="CenterAndExpand" Margin="1,10,210,1" Scale="0.6"   />
+                                <Label Grid.Row="0" Grid.Column="0" Text="Active Policy" Margin="100,20,0,0" FontAttributes="Bold" TextColor="Black"></Label>
+                                <Image Grid.Row="0" Grid.Column="0" Source="Down.png" VerticalOptions="Center" HorizontalOptions="CenterAndExpand" Scale="0.2" Margin="210,0,0,0"></Image>
+
+                            </Grid>
+                        </Grid>
+
+
+                    </xct:Expander.Header>
+                    <StackLayout BackgroundColor="Transparent" Margin="40,0,23,0">
+                        <Frame HeightRequest="45" WidthRequest="100" BackgroundColor="Transparent" Padding="0" Margin="0,0,0,0">
+                            <Grid Margin="0" BackgroundColor="Transparent" ColumnSpacing="0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="100*" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="80*" />
+                                    <ColumnDefinition Width="20*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Row="0" Grid.Column="0" Text="View Policy List" VerticalTextAlignment="Center" BackgroundColor="Transparent" FontFamily="Roboto Light" FontSize="16" TextColor="#555555" Margin="15,0,0,0" />
+                                <Image Grid.Row="0" Grid.Column="1" Source="Right.png" VerticalOptions="Center" HorizontalOptions="Center" Margin="0,0,0,0" BackgroundColor="Transparent" Aspect="AspectFill" />
+                            </Grid>
+                        </Frame>
+                        <Frame HeightRequest="45" WidthRequest="100" BackgroundColor="Transparent" Padding="0" Margin="0,0,0,0">
+                            <Grid Margin="0" BackgroundColor="Transparent" ColumnSpacing="0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="100*" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="80*" />
+                                    <ColumnDefinition Width="20*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Row="0" Grid.Column="0" Text="Download Policy schedule" VerticalTextAlignment="Center" BackgroundColor="Transparent" FontFamily="Roboto Light" FontSize="16" TextColor="#555555" Margin="15,0,0,0" />
+                                <Image Grid.Row="0" Grid.Column="1" Source="Right.png" VerticalOptions="Center" HorizontalOptions="Center" Margin="0,0,0,0" BackgroundColor="Transparent" Aspect="AspectFill" />
+                            </Grid>
+                        </Frame>
+                        <Frame HeightRequest="45" WidthRequest="100" BackgroundColor="Transparent" Padding="0" Margin="0,0,0,0">
+                            <Grid Margin="0" BackgroundColor="Transparent" ColumnSpacing="0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="100*" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="80*" />
+                                    <ColumnDefinition Width="20*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Row="0" Grid.Column="0" Text="View premium receipt" VerticalTextAlignment="Center" BackgroundColor="Transparent" FontFamily="Roboto Light" FontSize="16" TextColor="#555555" Margin="15,0,0,0" />
+                                <Image Grid.Row="0" Grid.Column="1" Source="Right.png" VerticalOptions="Center" HorizontalOptions="Center" Margin="0,0,0,0" BackgroundColor="Transparent" Aspect="AspectFill" />
+                            </Grid>
+                        </Frame>
+                        <Frame HeightRequest="45" WidthRequest="100" BackgroundColor="Transparent" Padding="0" Margin="0,0,0,0">
+                            <Grid Margin="0" BackgroundColor="Transparent" ColumnSpacing="0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="100*" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="80*" />
+                                    <ColumnDefinition Width="20*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Row="0" Grid.Column="0" Text="View products benefits" VerticalTextAlignment="Center" BackgroundColor="Transparent" FontFamily="Roboto Light" FontSize="16" TextColor="#555555" Margin="15,0,0,0" />
+                                <Image Grid.Row="0" Grid.Column="1" Source="Right.png" VerticalOptions="Center" HorizontalOptions="Center" Margin="0,0,0,0" BackgroundColor="Transparent" Aspect="AspectFill" />
+                            </Grid>
+                        </Frame>
+                        <Frame HeightRequest="45" WidthRequest="100" BackgroundColor="Transparent" Padding="0" Margin="0,0,0,0" CornerRadius="0" HasShadow="False">
+                            <Grid Margin="0" BackgroundColor="Transparent" ColumnSpacing="0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="100*" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="80*" />
+                                    <ColumnDefinition Width="20*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Row="0" Grid.Column="0" Text="Surrendering Policy" VerticalTextAlignment="Center" BackgroundColor="Transparent" FontFamily="Roboto Light" FontSize="16" TextColor="#555555" Margin="15,0,0,0" />
+                                <Image Grid.Row="0" Grid.Column="1" Source="Right.png" VerticalOptions="Center" HorizontalOptions="Center" Margin="0,0,0,0" BackgroundColor="Transparent" Aspect="AspectFill" />
+                            </Grid>
+                        </Frame>
+                        <Frame HeightRequest="45" WidthRequest="100" BackgroundColor="Transparent" Padding="0" Margin="0,0,0,0" CornerRadius="0" HasShadow="False">
+                            <Grid Margin="0" BackgroundColor="Transparent" ColumnSpacing="0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="100*" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="80*" />
+                                    <ColumnDefinition Width="20*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Row="0" Grid.Column="0" Text="Mail me policy" VerticalTextAlignment="Center" BackgroundColor="Transparent" FontFamily="Roboto Light" FontSize="16" TextColor="#555555" Margin="15,0,0,0" />
+                                <Image Grid.Row="0" Grid.Column="1" Source="Right.png" VerticalOptions="Center" HorizontalOptions="Center" Margin="0,0,0,0" BackgroundColor="Transparent" Aspect="AspectFill" />
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+                </xct:Expander>
+                <!--ActivePolicy end-->
+                <!--PolicyChanges-->
+                <xct:Expander x:Name="ExpanderPolicyChanges" CollapseAnimationLength="250">
+                    <xct:Expander.Header>
+                        <Grid ColumnSpacing="0" BackgroundColor="#EFF1F5" VerticalOptions="Center" HorizontalOptions="CenterAndExpand">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="100*" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100*" />
+                            </Grid.ColumnDefinitions>
+
+                            <Grid x:Name="PolicyChanges" Margin="20,0,20,2" BackgroundColor="Transparent" ColumnSpacing="0" VerticalOptions="Center" HorizontalOptions="CenterAndExpand">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="100*" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+
+                                    <ColumnDefinition Width="100*" />
+
+                                </Grid.ColumnDefinitions>
+                                <Frame CornerRadius="30" BackgroundColor="#EFF1F5" Margin="0,0,0,0" />
+                                <Image Grid.Row="0" Grid.Column="0" Source="Policychanges.png" Scale="0.6" VerticalOptions="Center" HorizontalOptions="CenterAndExpand" Margin="0,10,210,0" />
+                                <Label Grid.Row="0" Grid.Column="0" Text="Policy Changes" Margin="100,20,0,0" FontAttributes="Bold" TextColor="Black"/>
+                                <Image Grid.Row="0" Grid.Column="0" Source="Down.png" VerticalOptions="Center" HorizontalOptions="CenterAndExpand" Scale="0.2" Margin="210,0,0,0"></Image>
+
+                            </Grid>
+                        </Grid>
+
+                    </xct:Expander.Header>
+                    <StackLayout BackgroundColor="Transparent" Margin="40,0,23,0">
+                        <Frame HeightRequest="45" WidthRequest="100" BackgroundColor="Transparent" Padding="0" Margin="0,0,0,0">
+                            <Grid Margin="0" BackgroundColor="Transparent" ColumnSpacing="0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="100*" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="80*" />
+                                    <ColumnDefinition Width="20*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Row="0" Grid.Column="0" Text="Sample" VerticalTextAlignment="Center" BackgroundColor="Transparent" FontFamily="Roboto Light" FontSize="16" TextColor="#555555" Margin="15,0,0,0" />
+                                <Image Grid.Row="0" Grid.Column="1" Source="Right.png" VerticalOptions="Center" HorizontalOptions="Center" Margin="0,0,0,0" BackgroundColor="Transparent" Aspect="AspectFill" />
+                            </Grid>
+                        </Frame>
+                        <Frame HeightRequest="45" WidthRequest="100" BackgroundColor="Transparent" Padding="0" Margin="0,0,0,0" CornerRadius="0" HasShadow="False">
+                            <Grid Margin="0" BackgroundColor="Transparent" ColumnSpacing="0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="100*" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="80*" />
+                                    <ColumnDefinition Width="20*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Row="0" Grid.Column="0" Text="Sample" VerticalTextAlignment="Center" BackgroundColor="Transparent" FontFamily="Roboto Light" FontSize="16" TextColor="#555555" Margin="15,0,0,0" />
+                                <Image Grid.Row="0" Grid.Column="1" Source="Right.png" VerticalOptions="Center" HorizontalOptions="Center" Margin="0,0,0,0" BackgroundColor="Transparent" Aspect="AspectFill" />
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+                </xct:Expander>
+                <!--PolicyChanges end-->
+                <!--Lpased Policy -->
+                <xct:Expander x:Name="ExpanderLpasedPolicy" CollapseAnimationLength="250">
+                    <xct:Expander.Header>
+                        <Grid ColumnSpacing="0" BackgroundColor="#EFF1F5" VerticalOptions="Fill" HorizontalOptions="Fill">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="100*" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100*" />
+                            </Grid.ColumnDefinitions>
+
+                            <Grid Margin="20,0,20,2" BackgroundColor="Transparent" ColumnSpacing="0" VerticalOptions="Fill" HorizontalOptions="Fill">
+                                <Grid.GestureRecognizers />
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="100*" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="100*" />
+
+                                </Grid.ColumnDefinitions>
+                                <Frame CornerRadius="30" BackgroundColor="#EFF1F5" Margin="0,0,0,0" />
+                                <Image Grid.Row="0" Grid.Column="0" Source="lapsed.png" Scale="0.5" VerticalOptions="Center" HorizontalOptions="CenterAndExpand" Margin="0,0,210,10" />
+                                <Label Grid.Row="0" Grid.Column="0" Text="Lapsed Policy" Margin="100,20,0,10" FontAttributes="Bold" TextColor="Black"/>
+                                <Image Grid.Row="0" Grid.Column="0" Source="Down.png" VerticalOptions="Center" HorizontalOptions="CenterAndExpand" Scale="0.2" Margin="210,0,0,0"></Image>
+
+                            </Grid>
+                        </Grid>
+
+                    </xct:Expander.Header>
+                    <StackLayout BackgroundColor="Transparent" Margin="40,0,23,0">
+                        <Frame HeightRequest="45" WidthRequest="100" BackgroundColor="Transparent" Padding="0" Margin="0,0,0,0" CornerRadius="0" HasShadow="False">
+                            <Grid Margin="0" BackgroundColor="Transparent" ColumnSpacing="0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="100*" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="80*" />
+                                    <ColumnDefinition Width="20*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Row="0" Grid.Column="0" Text="Sample" VerticalTextAlignment="Center" BackgroundColor="Transparent" FontFamily="Roboto Light" FontSize="16" TextColor="#555555" Margin="15,0,0,0" />
+                                <Image Grid.Row="0" Grid.Column="1" Source="Right.png" VerticalOptions="Center" HorizontalOptions="Center" Margin="0,0,0,0" BackgroundColor="Transparent" Aspect="AspectFill" />
+                            </Grid>
+                        </Frame>
+                        <Frame HeightRequest="45" WidthRequest="100" BackgroundColor="Transparent" Padding="0" Margin="0,0,0,0" CornerRadius="0" HasShadow="False">
+                            <Grid Margin="0" BackgroundColor="Transparent" ColumnSpacing="0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="100*" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="80*" />
+                                    <ColumnDefinition Width="20*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Row="0" Grid.Column="0" Text="Sample" VerticalTextAlignment="Center" BackgroundColor="Transparent" FontFamily="Roboto Light" FontSize="16" TextColor="#555555" Margin="15,0,0,0" />
+                                <Image Grid.Row="0" Grid.Column="1" Source="Right.png" VerticalOptions="Center" HorizontalOptions="Center" Margin="0,0,0,0" BackgroundColor="Transparent" Aspect="AspectFill" />
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+                </xct:Expander>
+                <!--Lpased Policy end-->
+                <!--Payments-->
+                <xct:Expander x:Name="ExpanderPayments" CollapseAnimationLength="250" IsExpanded="False">
+                    <xct:Expander.Header>
+                        <Grid ColumnSpacing="0" BackgroundColor="#EFF1F5" VerticalOptions="Fill" HorizontalOptions="Fill">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="100*" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100*" />
+                            </Grid.ColumnDefinitions>
+
+                            <Grid Margin="20,0,20,0"  ColumnSpacing="0" x:Name="Payments" VerticalOptions="Start" HorizontalOptions="Start">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="100*" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+
+                                    <ColumnDefinition Width="100*" />
+
+                                </Grid.ColumnDefinitions>
+                                <Frame HeightRequest="0" CornerRadius="30" BackgroundColor="#EFF1F5" Margin="0,2,2,12" />
+                                <Image Grid.Row="0" Grid.Column="0" Source="Payments.png" Scale="0.6" VerticalOptions="Center" HorizontalOptions="CenterAndExpand" Margin="0,0,210,10" />
+                                <Label Grid.Row="0" Grid.Column="0" Text="Payment" Margin="100,20,0,10" FontAttributes="Bold" TextColor="Black"/>
+                                <Image Grid.Row="0" Grid.Column="0" Source="Down.png" VerticalOptions="Center" HorizontalOptions="CenterAndExpand" Scale="0.2" Margin="210,0,0,0"></Image>
+                            </Grid>
+                        </Grid>
+
+                    </xct:Expander.Header>
+                    <StackLayout BackgroundColor="Transparent" Margin="40,0,23,0">
+                        <Frame HeightRequest="45" WidthRequest="100" BackgroundColor="Transparent" Padding="0" Margin="0,0,0,0">
+                            <Grid Margin="0" BackgroundColor="Transparent" ColumnSpacing="0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="100*" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="80*" />
+                                    <ColumnDefinition Width="20*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Row="0" Grid.Column="0" Text="Sample" VerticalTextAlignment="Center" BackgroundColor="Transparent" FontFamily="Roboto Light" FontSize="16" TextColor="#555555" Margin="15,0,0,0" />
+                                <Image Grid.Row="0" Grid.Column="1" Source="Right.png" VerticalOptions="Center" HorizontalOptions="Center" Margin="0,0,0,0" BackgroundColor="Transparent" Aspect="AspectFill" />
+                            </Grid>
+                        </Frame>
+                        <Frame HeightRequest="45" WidthRequest="100" BackgroundColor="Transparent" Padding="0" Margin="0,0,0,0">
+                            <Grid Margin="0" BackgroundColor="Transparent" ColumnSpacing="0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="100*" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="80*" />
+                                    <ColumnDefinition Width="20*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Row="0" Grid.Column="0" Text="Sample" VerticalTextAlignment="Center" BackgroundColor="Transparent" FontFamily="Roboto Light" FontSize="16" TextColor="#555555" Margin="15,0,0,0" />
+                                <Image Grid.Row="0" Grid.Column="1" Source="Right.png" VerticalOptions="Center" HorizontalOptions="Center" Margin="0,0,0,0" BackgroundColor="Transparent" Aspect="AspectFill" />
+                            </Grid>
+                        </Frame>
+                        <Frame HeightRequest="45" WidthRequest="100" BackgroundColor="Transparent" Padding="0" Margin="0,0,0,0">
+                            <Grid Margin="0" BackgroundColor="Transparent" ColumnSpacing="0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="100*" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="80*" />
+                                    <ColumnDefinition Width="20*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Row="0" Grid.Column="0" Text="Sample" VerticalTextAlignment="Center" BackgroundColor="Transparent" FontFamily="Roboto Light" FontSize="16" TextColor="#555555" Margin="15,0,0,0" />
+                                <Image Grid.Row="0" Grid.Column="1" Source="Right.png" VerticalOptions="Center" HorizontalOptions="Center" Margin="0,0,0,0" BackgroundColor="Transparent" Aspect="AspectFill" />
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+
+                </xct:Expander>
+                
+                <!--Payments ends-->
+                <!--blankspace-->
+                <Frame HeightRequest="160" WidthRequest="100" BackgroundColor="Transparent" Padding="0" Margin="0,0,0,0"  />
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>
